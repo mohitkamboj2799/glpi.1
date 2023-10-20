@@ -243,6 +243,6 @@ info "<==========================================>"
 echo ""
 info "If you encounter any issue with this script, please report it on GitHub: https://github.com/jr0w3/GLPI_install_script/issues"
 }
-
+}
 
 
