@@ -100,7 +100,7 @@ warn "This script will now install the necessary packages for installing and con
 info "Are you sure you want to continue? [yes/no]"auto
 
 
-fi
+
 }
 
 function install_packages()
