@@ -97,17 +97,9 @@ HOST=$(hostname)
 function confirm_installation()
 {
 warn "This script will now install the necessary packages for installing and configuring GLPI."
-info "Are you sure you want to continue? [yes/no]"
+info "Are you sure you want to continue? [yes/no]"auto
 
-read confirm
-if [ $confirm == "auto" ]; then
-        info "Continuing..."
-elif [ $confirm == "no" ]; then
-        info "Exiting..."
-        exit 1
-else
-        warn "Invalid response. Exiting..."
-        exit 1
+
 fi
 }
 
