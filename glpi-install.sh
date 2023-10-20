@@ -84,7 +84,7 @@ elif [ "$DISTRO" == "Ubuntu" ]; then
 else
         warn "Il s'agit d'une autre distribution que Debian ou Ubuntu qui n'est pas compatible."
         exit 1
-
+}
 
 
 function network_info()
@@ -242,7 +242,6 @@ info "GLPI database name:          glpi"
 info "<==========================================>"
 echo ""
 info "If you encounter any issue with this script, please report it on GitHub: https://github.com/jr0w3/GLPI_install_script/issues"
-}
 }
 
 
