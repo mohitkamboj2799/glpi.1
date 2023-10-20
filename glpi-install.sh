@@ -85,7 +85,7 @@ else
         warn "Il s'agit d'une autre distribution que Debian ou Ubuntu qui n'est pas compatible."
         exit 1
 
-}
+
 
 function network_info()
 {
