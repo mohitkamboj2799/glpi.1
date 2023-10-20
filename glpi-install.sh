@@ -84,7 +84,7 @@ elif [ "$DISTRO" == "Ubuntu" ]; then
 else
         warn "Il s'agit d'une autre distribution que Debian ou Ubuntu qui n'est pas compatible."
         exit 1
-fi
+
 }
 
 function network_info()
