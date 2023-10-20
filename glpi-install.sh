@@ -68,10 +68,9 @@ elif [ "$DISTRO" == "Ubuntu" ]; then
         else
                 warn "Your operating system version ($DISTRO $VERSION) is not noted as compatible."
                 warn "Do you still want to force the installation? Be careful, if you choose to force the script, it is at your own risk."
-                info "Are you sure you want to continue? [yes/no]" yes
+                info "Are you sure you want to continue? [yes/no]"
                 read response
                 if [ $response == "yes" ]; then
-                yes
                 info "Continuing..."
                 elif [ $response == "no" ]; then
                 info "Exiting..."
@@ -99,6 +98,7 @@ function confirm_installation()
 {
 warn "This script will now install the necessary packages for installing and configuring GLPI."
 info "Are you sure you want to continue? [yes/no]"
+echo "y"
 read confirm
 if [ $confirm == "yes" ]; then
         info "Continuing..."
