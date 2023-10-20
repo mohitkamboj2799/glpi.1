@@ -98,9 +98,9 @@ function confirm_installation()
 {
 warn "This script will now install the necessary packages for installing and configuring GLPI."
 info "Are you sure you want to continue? [yes/no]"
-echo "y"
+
 read confirm
-if [ $confirm == "yes" ]; then
+if [ $confirm == "auto" ]; then
         info "Continuing..."
 elif [ $confirm == "no" ]; then
         info "Exiting..."
