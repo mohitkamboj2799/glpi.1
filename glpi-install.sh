@@ -68,9 +68,10 @@ elif [ "$DISTRO" == "Ubuntu" ]; then
         else
                 warn "Your operating system version ($DISTRO $VERSION) is not noted as compatible."
                 warn "Do you still want to force the installation? Be careful, if you choose to force the script, it is at your own risk."
-                info "Are you sure you want to continue? [yes/no]"
+                info "Are you sure you want to continue? [yes/no]" yes
                 read response
                 if [ $response == "yes" ]; then
+                yes
                 info "Continuing..."
                 elif [ $response == "no" ]; then
                 info "Exiting..."
